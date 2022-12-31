@@ -63,6 +63,24 @@ Kelola Data
         </tr>
       </thead>
       <tbody>
+        @foreach($kriteria as $data)
+        <tr>
+          <td>{{$no++}}</td>
+          <td>{{$data->kode_kriteria}}</td>
+          <td>{{$data->nama_kriteria}}</td>
+          <td>
+          <button value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 edit_kriteria" type="button" data-bs-placement="top" titte data-bs-original-title="Edit" data-bs-toggle="tooltip">
+          <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+            <button value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_kriteria" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
+            <i class="fa-solid fa-trash-can"></i>
+            </button>
+            <a href="/show-subkriteria/{{$data->kode_kriteria}}" value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_kriteria" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
+            <i class="fa-regular fa-eye"></i>
+            </a>
+          </td>
+          </tr>
+        @endforeach
       </tbody>
     </table>
   </div>

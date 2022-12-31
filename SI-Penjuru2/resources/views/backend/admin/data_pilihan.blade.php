@@ -64,17 +64,17 @@ Kelola Data
         </tr>
       </thead>
       <tbody>
-      @foreach ($pilihan as $item)
+      @foreach ($pilihan as $data)
       <tr>
           <td>{{ $no++ }}</td>
-          <td>{{ $item->kode_pilihan }}</td>
-          <td>{{ $item->nama_pilihan }}</td>
-          <td>{{ $item->points }}</td>
+          <td>{{ $data->kode_pilihan }}</td>
+          <td>{{ $data->nama_pilihan }}</td>
+          <td>{{ $data->points }}</td>
           <td>
-          <button value="{{ $item->kode_pilihan }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 edit_pilihan" type="button" data-bs-placement="top" titte data-bs-original-title="Edit" data-bs-toggle="tooltip">
+          <button value="{{ $data->kode_pilihan }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 edit_pilihan" type="button" data-bs-placement="top" titte data-bs-original-title="Edit" data-bs-toggle="tooltip">
           <i class="fa-solid fa-pen-to-square"></i>
           </button>
-            <button value="{{ $item->kode_pilihan }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_pilihan" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
+            <button value="{{ $data->kode_pilihan }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_pilihan" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
             <i class="fa-solid fa-trash-can"></i>
             </button>
           </td>

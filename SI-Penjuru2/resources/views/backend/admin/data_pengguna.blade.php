@@ -64,6 +64,21 @@ Kelola Data
         </tr>
       </thead>
       <tbody>
+        @foreach($user as $data)
+        <tr>
+        <td>{{$no++}}</td>
+          <td>{{$data->name}}</td>
+          <td>{{$data->email}}</td>
+          <td>{{$data->level}}</td>
+          <td><button value="{{$data->id}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 edit_user" type="button" data-bs-placement="top" titte data-bs-original-title="Edit" data-bs-toggle="modal">
+          <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+            <button value="{{$data->id}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_user" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
+            <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        </tr>
+        @endforeach
       </tbody>
     </table>
   </div>

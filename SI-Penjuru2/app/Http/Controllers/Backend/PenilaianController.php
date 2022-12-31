@@ -21,7 +21,9 @@ class PenilaianController extends Controller
         $admin = DB::table('admin')->join('users', 'admin.user_id', '=', 'users.id')->find(Auth::user()->id);
         $guru = DB::table('guru')->join('users', 'guru.user_id', '=', 'users.id')->find(Auth::user()->id);
         $wali = DB::table('wali')->join('users', 'wali.user_id', '=', 'users.id')->find(Auth::user()->id);
-        return view('backend/admin.data_penilaian', compact('admin', 'guru', 'wali'));
+        $penilaian = Penilaian::all();
+        $no = 1;
+        return view('backend/admin.data_penilaian', compact('admin', 'guru', 'wali','penilaian','no'));
     }
 
     /**
@@ -156,12 +158,12 @@ class PenilaianController extends Controller
     }
 
 
-    public function fetchpenilaian()
-    {
-        $penilaian = Penilaian::all();
-        return response()->json([
-            'penilaian' => $penilaian,
-        ]);
-    }
+    // public function fetchpenilaian()
+    // {
+    //     $penilaian = Penilaian::all();
+    //     return response()->json([
+    //         'penilaian' => $penilaian,
+    //     ]);
+    // }
     
 }
