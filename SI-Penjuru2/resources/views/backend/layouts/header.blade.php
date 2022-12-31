@@ -38,22 +38,22 @@
   <!-- Vendor Styles Start -->
   <link rel="stylesheet" href="{{asset('backend/css/vendor/bootstrap.min.css')}}" />
   <link rel="stylesheet" href="{{asset('backend/css/vendor/OverlayScrollbars.min.css')}}" />
+  <link rel="stylesheet" href="{{asset('backend/css/vendor/datatables.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/css/vendor/glide.core.min.css')}}" />
   <link rel="stylesheet" href="{{asset('backend/css/vendor/baguetteBox.min.css')}}" />
   <link rel="stylesheet" href="{{asset('backend/css/vendor/plyr.css')}}" />
   <link rel="stylesheet" href="{{asset('backend/css/vendor/select2.min.css')}}" />
   <link rel="stylesheet" href="{{asset('backend/css/vendor/select2-bootstrap4.min.css')}}" />
-  <link rel="stylesheet" href="{{asset('backend/css/vendor/datatables.min.css')}}">
   <!-- <link rel="stylesheet" href="cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> -->
 
   <!-- Vendor Styles End -->
   <!-- Template Base Styles Start -->
   <link rel="stylesheet" href="{{asset('backend/css/styles.css')}}" />
   <link rel="stylesheet" href="{{asset('css/datatable.css')}}" />
-  <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
+  <!-- <link rel="stylesheet" href="{{asset('css/responsive.css')}}" /> -->
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css"> -->
   <!-- Template Base Styles End -->
 
   <link rel="stylesheet" href="{{asset('backend/css/main.css')}}" />
