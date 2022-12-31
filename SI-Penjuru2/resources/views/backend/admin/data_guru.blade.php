@@ -65,6 +65,20 @@ Kelola Data
         </tr>
       </thead>
       <tbody>
+        @foreach($dataguru as $data)
+        <tr>
+          <td>{{$no++}}</td>
+          <td><image src="backend/img/profile/profile-11.jpg" width="100px" height="100px" alt="image"></td>
+          <td>{{$data->nik}}</td>
+          <td>{{$data->name}}</td>
+          <td>{{$data->tanggal_lahir}}</td>
+          <td>{{$data->tempat_lahir}}</td>
+          <td>{{$data->jenis_kelamin}}</td>
+          <td>{{$data->alamat}}</td>
+          <td>{{$data->no_telp}}</td>
+          <td></td>
+        </tr>
+        @endforeach
       </tbody>
     </table>
   </div>
