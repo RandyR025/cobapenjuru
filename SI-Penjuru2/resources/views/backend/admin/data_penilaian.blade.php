@@ -165,9 +165,10 @@ Kelola Data
     </div>
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
 <!-- <script src="{{asset('backend/js/vendor/jquery-3.5.1.min.js')}}"></script> -->
 <!-- <script src="cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+@section('js')
 <script type="text/javascript">
   $(document).ready(function() {
     var table = $('#datatable').DataTable({
@@ -194,5 +195,6 @@ Kelola Data
 </script>
 <script src="{{asset('js/Penilaian.js')}}"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@endsection
 
 @endsection

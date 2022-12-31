@@ -302,8 +302,10 @@
 <!-- Search Modal End -->
 
 <!-- Vendor Scripts Start -->
-<!-- <script src="{{asset('backend/js/vendor/jquery-3.5.1.min.js')}}"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+<script src="{{asset('backend/js/vendor/jquery-3.5.1.min.js')}}"></script>
 <script src="{{asset('backend/js/vendor/bootstrap.bundle.min.js')}}"></script>
+@yield('js')
 <script src="{{asset('backend/js/vendor/OverlayScrollbars.min.js')}}"></script>
 <script src="{{asset('backend/js/vendor/autoComplete.min.js')}}"></script>
 <script src="{{asset('backend/js/vendor/clamp.min.js')}}"></script>
